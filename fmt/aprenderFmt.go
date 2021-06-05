@@ -17,10 +17,13 @@ func apFmt() {
 	fmt.Printf("%v tiene más de %v cursos\n", nombre, cursos)
 
 	//Sprintf
-	message := fmt.Sprintf("%s tiene más de %d cursos", nombre, cursos)
+	message := fmt.Sprintf("%s tiene más de %d cursos\n", nombre, cursos)
 	fmt.Print(message)
 
 	//Tipo datos
 	fmt.Printf("helloMessage: %T\n", helloMessage)
 	fmt.Printf("cursos: %T\n", cursos)
+}
+func main() {
+	apFmt()
 }
