@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 func main() {
@@ -80,6 +81,6 @@ func main() {
 
 	//Área círculo
 	const radioCirculo = 5
-	areaCirculo := pi * (radioCirculo * radioCirculo)
+	areaCirculo := math.Pi * math.Pow(radioCirculo, 2)
 	fmt.Println("Área circulo:", areaCirculo)
 }
